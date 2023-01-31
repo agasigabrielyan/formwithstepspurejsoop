@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FORM WITH PAGINATION</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <div id="multi-step-form" class='form' data-current-page="1" data-max-page="3">
+            <div class="form__header">
+                <h1>Multi step form</h1>
+                <div class="progress-bar">
+                    <div class="page-step active" data-number="1">1</div>
+                    <div class="page-step" data-number="2">2</div>
+                    <div class="page-step" data-number="3">3</div>
+                </div>
+            </div>
+            <form class="form__body">
+
+                <div class="form__page active" data-page="1">
+                    <input type='text' placeholder="name" />
+                    <input type='text' placeholder="username" />
+                    <input type='text' placeholder="email" />
+                    <div class="form__buttons">
+                        <button class='btn-form btn-next'>next</button>
+                    </div>
+                </div>
+            
+            
+                <div class="form__page" data-page="2">
+                    <input type='text' placeholder="address" />
+                    <input type='text' placeholder="addresto" />
+                    <div class="form__buttons">
+                        <button class='btn-form btn-prev'>Prev</button>
+                        <button class='btn-form btn-next'>next</button>
+                    </div>
+                </div>
+            
+            
+                <div class="form__page" data-page="3">
+                    <input type='password' placeholder="password" />
+                    <input type='password' placeholder="repassword" />
+                    <div class="form__buttons">
+                        <button class='btn-form btn-prev'>Prev</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+      <script src="./script.js"></script>
+</body>
+</html>
